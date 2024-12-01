@@ -53,9 +53,9 @@ Cart data is stored in the browser's local storage to persist the cart items eve
 The cart allows users to add, remove, and update quantities of products.
 
 ### Screenshots
-![Homepage] (https://github.com/Pranavbankar/Ecommerce_website/blob/main/screenshots/Screenshot_1.png?raw=true)
+![Homepage](https://github.com/Pranavbankar/Ecommerce_website/blob/main/screenshots/Screenshot_1.png?raw=true)
 
-![Product Details] (https://github.com/Pranavbankar/Ecommerce_website/blob/main/screenshots/Screenshot_2.png?raw=true)
+![Product Details](https://github.com/Pranavbankar/Ecommerce_website/blob/main/screenshots/Screenshot_2.png?raw=true)
 
-![My Cart] (https://github.com/Pranavbankar/Ecommerce_website/blob/main/screenshots/Screenshot_3.png?raw=true)
+![My Cart](https://github.com/Pranavbankar/Ecommerce_website/blob/main/screenshots/Screenshot_3.png?raw=true)
 
