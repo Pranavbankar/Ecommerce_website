@@ -1,72 +1,53 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # Ecommerce_website
-# Ecommerce_website
+
+A simple e-commerce website built using React that allows users to view products, view product details, and add products to the cart. The website fetches product data from a mock API (FakeStoreAPI) and stores the cart data in local storage to persist even after a page reload.
+
+## Setup Instructions
+
+Follow these steps to get the project running locally:
+
+### 1. Clone the Repository
+
+Clone the repository to your local machine
+
+### 2. Install Dependencies
+Install the necessary dependencies using npm:
+
+npm install
+### 3. Start the Development Server
+
+To start the project locally, run:
+npm start
+
+
+### Tools Used
+React: A JavaScript library for building user interfaces.
+React Router: Used to handle dynamic routing for the product details page.
+FakeStoreAPI: A mock API to fetch product data dynamically.
+CSS: Custom styling for visual enhancement.
+
+### Features
+### 1. Homepage:
+Displays a list of products fetched from the FakeStoreAPI.
+Each product shows its name, price, image, and a "View Details" button.
+Clicking "View Details" navigates to the product's details page.
+### 2. Product Details Page:
+Displays detailed information about the selected product.
+Includes a button to "Add to Cart" which stores the product data in local storage.
+### 3. Cart Functionality:
+The cart is stored in local storage, so even after a page reload, the cart persists.
+Allows adding multiple quantities of a product to the cart.
+### 4. Responsive Design:
+The application is responsive and adjusts its layout for different screen sizes using custom CSS.
+### Approach
+### 1. Fetching Data:
+The product data is fetched from the FakeStoreAPI using the fetch API.
+The product list is displayed on the homepage, and the product details are dynamically shown when a user clicks "View Details".
+### 2. State Management:
+React’s useState hook is used to manage the state for products, cart, and other UI elements.
+The useEffect hook is used to fetch product data when the component mounts.
+### 3. Routing:
+React Router is used to create dynamic routes for the product details page. The URL is structured as /product/:id, where id is the product ID.
+### 4. Local Storage:
+Cart data is stored in the browser's local storage to persist the cart items even when the page is refreshed.
+The cart allows users to add, remove, and update quantities of products.
